@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Share - Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎥 Video Share Space</h1>
+        <div class="header-buttons">
+            <a href="index.html" class="nav-btn back-btn">⬅️ Back to Gallery</a>
+            <button id="darkModeToggle" class="theme-btn">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Upload Form Section -->
+        <section class="upload-section">
+            <h2>Upload a New Video</h2>
+            <form id="uploadForm">
+                <div class="input-group">
+                    <label for="videoTitle">Video Title:</label>
+                    <input type="text" id="videoTitle" placeholder="Enter a catchy title..." required>
+                </div>
+                <div class="input-group">
+                    <label for="videoDesc">Description:</label>
+                    <textarea id="videoDesc" placeholder="What is this video about?..." rows="4" required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="videoInput">Select Video File:</label>
+                    <input type="file" id="videoInput" accept="video/*" required>
+                </div>
+                <button type="submit">Upload Video</button>
+            </form>
+            <div id="uploadStatus"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

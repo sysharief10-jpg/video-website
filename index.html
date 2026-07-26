@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Share - Watch Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎥 Video Share Space</h1>
+        <div class="header-buttons">
+            <a href="upload.html" class="nav-btn">➕ Upload a Video</a>
+            <button id="darkModeToggle" class="theme-btn">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search Bar Section -->
+        <section class="search-section">
+            <input type="text" id="searchBar" placeholder="🔍 Search videos by title or description...">
+        </section>
+
+        <!-- Video Gallery Section -->
+        <section class="gallery-section">
+            <h2>Watch & Download Videos</h2>
+            <div id="videoGallery" class="gallery-grid">
+                <!-- Videos will appear here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
