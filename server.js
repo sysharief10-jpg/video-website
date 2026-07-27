@@ -93,5 +93,5 @@ app.delete('/videos/:filename', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Backend server running at http://localhost:${PORT}`);
+    console.log(`Backend server running at http://localhost:3000`);
 });
